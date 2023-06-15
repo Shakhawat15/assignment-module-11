@@ -1,0 +1,123 @@
+/*Apply CSS styling to the HTML page created in Part 1 using the following requirements:*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
+
+/*Set a custom font for all text on the page.*/
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Apply different background colors to the container <div> and the table. And Set a specific width and height for the container <div>.*/
+.container {
+    background-color: azure;
+    width: 1200px;
+    margin: auto;
+    height: 100vh;
+    padding: 25px;
+    border: 5px solid #d5a7e8;
+    border-radius: 10px;
+}
+
+/*Style the heading with a different color, font size, and alignment.*/
+.container h1 {
+    color: darkorchid;
+    font-size: 48px;
+    text-align: center;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.container p {
+    text-align: justify;
+    margin-bottom: 5px;
+}
+
+/*Add a border around the table cells with a different color and border width.*/
+table {
+    background-color: #f5f0f0;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 2px solid #0cdcad;
+    padding: 5px;
+}
+
+/*Apply a hover effect to the table rows, changing their background color.*/
+tr:hover {
+    background-color: #d5a7e8;
+}
+
+/*Style the first list item of the unordered list differently from the rest.*/
+ul li:first-child {
+    color: #ff0088;
+    font-weight: bold;
+}
+
+/*Style the image with a specific width and height.*/
+img {
+    width: 200px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+/*Select and style table cells based on their position, e.g., the first column, the last row, etc.*/
+tbody tr:last-child td {
+    background-color: #FF00FF;
+}
+
+tbody td:first-child {
+    background-color: #FFFF00;
+}
+
+/*Style the table header row with a different background color.*/
+thead th {
+    background-color: #FFA500;
+}
+
+/*CSS Variables, Pseudo-classes, and Box Model*/
+/* CSS variables */
+:root {
+    --hover-color: #FF0000;
+    --link-color: #006fff;
+    --font-size-link: 18px;
+}
+
+.link li {
+    list-style: none;
+    display: inline-block;
+    /*padding: 10px;*/
+    margin: 0 0 5px 15px;
+}
+.link li a {
+    text-decoration: none;
+    font-size: var(--font-size-link);
+    color: var(--link-color);
+}
+
+/*Apply different styles to links when they are hovered over or clicked.*/
+.link li a:hover {
+    color: var(--hover-color);
+}
+
+/*Use the ::before or ::after pseudo-element to add decorative content to an element.*/
+h1::after {
+    content: '';
+    background-color: #0cdcad;
+    width: 400px;
+    height: 5px;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+
+
